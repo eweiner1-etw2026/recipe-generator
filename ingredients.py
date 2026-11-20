@@ -35,7 +35,7 @@ class Ingredient:
     """
 
     # CLASS ATTRIBUTES
-    api = os.environ['USDA_API_KEY'] # API KEY WILL BE INCLUDED IN .env FILE
+    api = os.getenv('USDA_API_KEY') # API KEY WILL BE INCLUDED IN .env FILE
     base_url = 'https://api.nal.usda.gov/fdc/v1'
 
     # CONSTRUCTOR
@@ -80,7 +80,7 @@ class Ingredient:
                 if int_x == 0:
                     self.name = input('Please enter the name of the item: ')
                     self.data_list = self.search()
-                    self.select_item()
+                    return self.select_item()
                 elif int_x not in range(1,6):
                     print('Invalid: must be a number from 1-5')
                     return None
@@ -96,9 +96,10 @@ class Ingredient:
             return None
 
     def nutrition(self):
-        url = f'{self.base_url}/food/{self.item_id}?api_key={self.api}'
+        url = f'{self.base_url}/food/{self.item_id}'
+        parameters = {'api_key': self.api}
         try:
-            response = requests.get(url)
+            response = requests.get(url, params = parameters)
         except requests.exceptions.ConnectionError:
             print('Connection Error')
             return 0
