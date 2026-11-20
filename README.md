@@ -11,7 +11,7 @@ __Project Dependencies/Environments/Libraries:__
 
 
 __Meeting Project Requirements and Rubric:__
-__Part 1 Requirements:__
+  __Part 1 Requirements:__
   1. We have two well-defined classes: class Ingredient and class Recipe. Both of these classes have constructors, attributes, methods, and instance objects. [These two classes must have a relationship: either inheritance or composition.] These are meaningful classes that contain functional logic relevant to the problem of searching databases for either inputted ingredients or selected recipe ingredient nutrional information. These are not empty or trivial structures.
   2. The recipegeneratorcodekaggle.py module defines five meaningful, well-defined functions that contribute directly to solving the identified problem. They work to read a CSV file and return a list of recipe objects, ask the user to input least one ingredient and return a list, determine the five shortest recipes that use every inputted ingredient, turn the data insto a list, and display the matches and return the one the user picks.
   3. We use two advanced Python libraries for data and processing, Pandas and [Requests # Does this one count?]. The libraries provide critical functionality to the program and are not used in a superfluous way. The Pandas library allows us to manipulate and analyze tabular data efficiently from the Kaggle database CSV file so we can best search for recipes that contain user-inputted ingredients. [The Requests library allows us to send HTTP requests, interact with web resources, and retrieve information from the online USDA FoodData Central database server so ingredient nutritional information can be accessed with our API key.] 
