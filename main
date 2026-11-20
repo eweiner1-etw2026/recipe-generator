@@ -1,0 +1,49 @@
+# Name: Rian Chowdhury, Kaylyn Sullivan, Emily Weiner
+# Email: rchowdh2@stevens.edu, ksulliv3@stevens.edu eweiner1@stevens.edu
+# Date: 12/16/2026
+# File name: main.ipynb
+# Description: A Python program uses two user modules to take a few food items as input, return a list of possible recipes, and provide nutrition information for a selected recipe.
+
+# Import libraries
+from pathlib import Path
+import os
+from dotenv import load_dotenv
+
+# Load API key BEFORE importing Ingredient
+load_dotenv()
+print("API key loaded:", os.getenv("USDA_API_KEY") is not None)
+
+# Import functions and classes from the two modules
+from recipegeneratorcodekaggle import load_recipes, ask_for_foods, find_recipes, choose_recipe
+from ingredients import Ingredient
+
+file_name = "RAW_recipes.csv"
+
+print("Please wait a minute for the recipes to load.")
+all_recipes = load_recipes(file_name)
+print(f"Loaded {len(all_recipes)} recipes.")
+
+user_ingredients = ask_for_foods()
+recipe_matches = find_recipes(all_recipes, user_ingredients)
+
+if recipe_matches:
+    print("\nMatching recipes:")
+    selected_recipe = choose_recipe(recipe_matches)
+else:
+    print("No recipes were found that use all of those ingredients.")
+    selected_recipe = None
+
+if selected_recipe == None:
+    print("No recipe was selected, so nutrition information cannot be retrieved.")
+else:
+    print("\nYou selected:")
+    print(selected_recipe)
+    ingredient_results = []
+
+    for recipe_ingredient in selected_recipe.ingredients:
+        print(f"Recipe ingredient: {recipe_ingredient}")
+        ingredient = Ingredient(recipe_ingredient)
+        ingredient.display_nutrient_data()
+        ingredient_results.append(ingredient)
+
+    print("\nNutrition lookup finished.")
