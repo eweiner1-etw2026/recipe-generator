@@ -42,7 +42,16 @@ Rubric:
   9. Video: Live demonstration and technical explanation (7 points). The next 2 minutes demonstrate the working program with actual inputs and outputs, explain its features, and briefly describe how the notebook, modules, classes, and data connect.
 
 Instructions for Running Program:
-1. 
+  1.
+  2.
+  3.
+  4.
+  5.
+  6.
+  7.
+  8.
+  9.
+  10.
 
 Group Members:
 - Rian Chowdhury (ID: 10460792) - rchowdh2@stevens.edu
