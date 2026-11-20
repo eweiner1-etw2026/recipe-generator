@@ -45,14 +45,14 @@ Instructions for Running Program:
 1. 
 
 Group Members:
-Rian Chowdhury (ID: 10460792) - rchowdh2@stevens.edu
-Kaylyn Sullivan (ID: 20006570) - ksulliv3@stevens.edu
-Emily Weiner (ID: 20013972) - eweiner1@stevens.edu
+- Rian Chowdhury (ID: 10460792) - rchowdh2@stevens.edu
+- Kaylyn Sullivan (ID: 20006570) - ksulliv3@stevens.edu
+- Emily Weiner (ID: 20013972) - eweiner1@stevens.edu
 
 Contributions:
-Rian: Coding, testing, and debugging ingredients.py module. Editing README.md.
-Kaylyn: Coding, testing, and debugging recipegeneratorcodekaggle.py module. Editing README.md.
-Emily: Coding, testing, and debugging main.ipynb. Writing README.md.
+- Rian: Coding, testing, and debugging ingredients.py module. Editing README.md.
+- Kaylyn: Coding, testing, and debugging recipegeneratorcodekaggle.py module. Editing README.md.
+- Emily: Coding, testing, and debugging main.ipynb. Writing README.md.
 
 Project Video Link:
 
