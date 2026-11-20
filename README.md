@@ -4,14 +4,15 @@ __Project Title:__ Recipe Generator
 
 __Project Description:__ A Python program that allows the user to input food items to generate a list of possible recipes using those ingredients. The purpose is for when you want to make dinner from what you already have at home. The program searches a Kaggle database of recipes for the inputted food item and returns a list of recipes that contain those items. The generated recipes will also include nutrition information (calories, macronutrients, etc.). Once a recipe is selected by the user, the program will search a UDSA database for the nutritional information of the ingridents in that recipe to calculate and return the total macronutrients. 
 
-__Project File/Module Structure:__
+__Project File/Module Structure:__\
+[WIP]
 
+__Project Dependencies/Environments/Libraries:__\
+[WIP]
 
-__Project Dependencies/Environments/Libraries:__
-
-
-__Meeting Project Requirements and Rubric:__
-  __Part 1 Requirements:__
+__Meeting Project Requirements and Rubric:__\
+\
+__Part 1 Requirements:__
   1. We have two well-defined classes: class Ingredient and class Recipe. Both of these classes have constructors, attributes, methods, and instance objects. [These two classes must have a relationship: either inheritance or composition.] These are meaningful classes that contain functional logic relevant to the problem of searching databases for either inputted ingredients or selected recipe ingredient nutrional information. These are not empty or trivial structures.
   2. The recipegeneratorcodekaggle.py module defines five meaningful, well-defined functions that contribute directly to solving the identified problem. They work to read a CSV file and return a list of recipe objects, ask the user to input least one ingredient and return a list, determine the five shortest recipes that use every inputted ingredient, turn the data insto a list, and display the matches and return the one the user picks.
   3. We use two advanced Python libraries for data and processing, Pandas and [Requests # Does this one count?]. The libraries provide critical functionality to the program and are not used in a superfluous way. The Pandas library allows us to manipulate and analyze tabular data efficiently from the Kaggle database CSV file so we can best search for recipes that contain user-inputted ingredients. [The Requests library allows us to send HTTP requests, interact with web resources, and retrieve information from the online USDA FoodData Central database server so ingredient nutritional information can be accessed with our API key.] 
@@ -42,16 +43,11 @@ __Rubric Requirements:__
   9. Video: Live demonstration and technical explanation (7 points). The next 2 minutes demonstrate the working program with actual inputs and outputs, explain its features, and briefly describe how the notebook, modules, classes, and data connect.
 
 __Instructions for Running Program:__
-  1.
-  2.
-  3.
-  4.
-  5.
-  6.
-  7.
-  8.
-  9.
-  10.
+  1. [WIP]
+  2. [WIP]
+  3. [WIP]
+  4. [WIP]
+  5. [WIP]
 
 __Group Members:__
 - Rian Chowdhury (ID: 10460792) - rchowdh2@stevens.edu
@@ -63,8 +59,8 @@ __Contributions:__
 - Kaylyn: Coding, testing, and debugging recipegeneratorcodekaggle.py module. Editing README.md.
 - Emily: Coding, testing, and debugging main.ipynb. Writing README.md.
 
-__Project Video Link:__
-
+__Project Video Link:__\
+[WIP]
 
 Include in this file based on Overall Requirements for the project:
 DONE [Project title]
